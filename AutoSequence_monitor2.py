@@ -3,6 +3,7 @@ import os
 import pyautogui
 from time import sleep
 import xlrd
+import sys
 
 # AUTHOR: Maria Babcock
 # DATE: 4/13/2023
@@ -18,7 +19,7 @@ import xlrd
 #   6. Check that mouse position coordinates of each button are correct using MousePosRecorder.py
 # DIRECTIONS:
 #   1. Open command prompt
-#   2. Type in python FilePath\FlightOperation_monitor2.py
+#   2. Type in python FilePath\AutoSequence_monitor2.py
 #   3. Monitor engine stats on TJ40 Monitor program and LabVIEW while running
 
 # INPUTS:
@@ -44,8 +45,11 @@ throttle_90_y = 976
 throttle_100_x = 810
 throttle_100_y = 976
 
+# Get input string from command line argument
+input_string = sys.argv[1]
+
 # Give the location of the file 
-loc = ("AutoSequence.xlsx") 
+loc = (input_string) 
   
 # To open Workbook 
 wb = xlrd.open_workbook(loc) 
