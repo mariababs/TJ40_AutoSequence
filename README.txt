@@ -14,5 +14,5 @@
    6. Check that mouse position coordinates of each button are correct using MousePosRecorder.py
  DIRECTIONS:
    1. Open command prompt
-   2. Type in python FilePath\FlightOperation_monitor2.py
+   2. Type in python FilePath\AutoSequence_monitor2.py
    3. Monitor engine stats on TJ40 Monitor program and LabVIEW while running
